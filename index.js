@@ -78,11 +78,7 @@ AWS.SingleSignOnCredentials = AWS.util.inherit(AWS.Credentials, {
       const sso = new AWS.SSO({ region: profile.sso_region });
       sso.getRoleCredentials(request, (err, c) => {
         if (!c) {
-          fs.writeSync(
-            process.stderr.fd,
-            `Caught exception: ${err}\nException origin: ${origin}`
-          );
-          console.error(err.message);
+          console.error(err);
           console.error("Please log in using 'aws sso login'");
         } else {
           self.expired = false;

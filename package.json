@@ -4,8 +4,8 @@
   "description": "Credentials provider for AWS Single Sign-On",
   "main": "index.js",
   "scripts": {
-    "build": "npm exec tsc",
-    "test": "npx jest --silent"
+    "build": "tsc",
+    "test": "jest --silent"
   },
   "repository": {
     "type": "git",
