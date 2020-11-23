@@ -36,15 +36,14 @@ export module "aws-sdk" {
   }
 
   export interface SsoCredentialsOptions {
-    profile: string;
-    filename: string;
+    profile?: string;
+    filename?: string;
   }
 
   export class SingleSignOnCredentials extends Credentials {
     constructor(options?: SsoCredentialsOptions);
     expired: boolean;
     load(callback: (err) => void): void;
-
     refresh(callback: (err) => void): void;
   }
 }
