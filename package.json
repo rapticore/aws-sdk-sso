@@ -1,6 +1,6 @@
 {
   "name": "@rrrix/aws-sdk-sso",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Credentials provider for AWS Single Sign-On",
   "main": "index.js",
   "scripts": {
